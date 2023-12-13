@@ -1,5 +1,7 @@
 #include "tree.h"
+#include <iostream>
 //constructor
-DecisionTree::DecisionTree(void) {
 
-};
+DecisionTree::DecisionTree(std::string split) {
+    std::cout << split << std::endl;
+}

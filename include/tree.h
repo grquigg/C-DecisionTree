@@ -1,15 +1,15 @@
 #ifndef _TREE_H_
 #define _TREE_H_
 
-#include <iostream>
+#include <string>
 
 class DecisionTree {
     public:
         //constructor
-        DecisionTree(void);
-
-        //destructor
-        DecisionTree(const DecisionTree&) = delete;
+        // DecisionTree(void);
+        DecisionTree(std::string split="gini");
+    private:
+        
 };
 
-#endif
+#endif /* _TREE_H_ */
