@@ -2,6 +2,7 @@
 #define _TREE_H_
 
 #include <string>
+#include "node.h"
 
 class DecisionTree {
     public:
@@ -9,7 +10,8 @@ class DecisionTree {
         // DecisionTree(void);
         DecisionTree(std::string split="gini");
     private:
-        
+        std::shared_ptr<const Node> root;
+        std::string _split;
 };
 
 #endif /* _TREE_H_ */
